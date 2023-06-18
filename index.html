@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Architectbuds.com</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.design img {
+			width: 300px;
+			height: 200px;
+		}
+
+		#contactInfo {
+			display: none;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: lightgray;
+		}
+	</style>
+	<script>
+		function showDesigns() {
+			var designsContent = document.getElementById("designsContent");
+			designsContent.style.display = "block";
+			
+			var contactInfo = document.getElementById("contactInfo");
+			contactInfo.style.display = "none";
+		}
+
+		function goHome() {
+			window.location.href = "index.html";
+		}
+
+		function showContactInfo() {
+			var designsContent = document.getElementById("designsContent");
+			designsContent.style.display = "none";
+			
+			var contactInfo = document.getElementById("contactInfo");
+			contactInfo.style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Architectbuds.com!</h1>
+		<div class="nav-menu">
+			<a href="#" onclick="goHome()">HOME</a>
+			<a href="#" onclick="showDesigns()">DESIGNS</a>
+			<a href="#" onclick="showContactInfo()">CONTACT US</a>
+		</div>
+
+		<!-- Designs Content Container -->
+		<div id="designsContent" style="display: none;">
+			<div class="design">
+				<img src="Autumn.jpg" alt="Autumn">
+				<p>Autumn House Design</p>
+			</div>
+			<div class="design">
+				<img src="Modern.jpg" alt="Modern">
+				<p>Modern House Design</p>
+			</div>
+			<div class="design">
+				<img src="Monochrome.jpg" alt="Monochrome">
+				<p>Monochrome House Design</p>
+			</div>
+			<div class="design">
+				<img src="Mountain.jpg" alt="Mountain">
+				<p>Mountain side House Design</p>
+			</div>
+			<div class="design">
+				<img src="Simple.jpg" alt="Simple">
+				<p>Simple House Design</p>
+			</div>
+			<div class="design">
+				<img src="Spring.jpg" alt="Spring ">
+				<p>Spring House Design</p>
+			</div>
+			<div class="design">
+				<img src="Tropical.jpg" alt="Tropical">
+				<p>Spring House Design</p>
+			</div>
+			<div class="design">
+				<img src="Victorian.jpg" alt="Victorian">
+				<p>Victorian House Design</p>
+			</div>
+			<div class="design">
+				<img src="Winter.jpg" alt="Winter">
+				<p>Winter House Design</p>
+			</div>
+		</div>
+
+		<!-- Contact Information Container -->
+		<div id="contactInfo">
+			<h2>Contact Information</h2>
+			<p>Email: Dcparasbarron@architectbuds.com</p>
+			<p>Phone: +63 9776319818</p>
+			<p>Address: Metro Manila, Manila, Philippines</p>
+		</div>
+	</div>
+</body>
+</html>

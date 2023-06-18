@@ -1,0 +1,75 @@
+body {
+    background-image: url('arch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4682B4;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-menu {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .nav-menu a {
+    color: #4682B4;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .nav-menu a:hover {
+    text-decoration: underline;
+    background-color: #305E8B;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  
+  .design p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  #contactInfo {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  .designs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .design img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+    
